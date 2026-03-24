@@ -7,14 +7,15 @@
     "android": "expo start --android"
   },
   "dependencies": {
-    "expo": "~55.0.8",
-    "expo-status-bar": "~2.0.0",
-    "react": "19.2.0",
-    "react-native": "0.81.6",
-    "axios": "^1.7.0",
+    "@expo/vector-icons": "^15.0.2",
     "@react-native-async-storage/async-storage": "^2.1.0",
-    "@expo/vector-icons": "^14.0.0",
-    "expo-dev-client": "~5.0.0"
+    "axios": "^1.7.0",
+    "expo": "~55.0.8",
+    "expo-dev-client": "~55.0.18",
+    "expo-font": "~55.0.4",
+    "expo-status-bar": "~55.0.4",
+    "react": "19.2.0",
+    "react-native": "0.83.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.0",
