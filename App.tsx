@@ -1,11 +1,13 @@
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-import { sendTestMessage } from '../services/telegramService';
+import { sendTestMessage } from './services/telegramService';
 
-export default function Index() {
+export default function App() {
   const handleTest = async () => {
     const success = await sendTestMessage();
-    Alert.alert(success ? 'Başarılı! ✅' : 'Hata! ❌', 
-      success ? 'Telegram\'a test mesajı gönderildi!' : 'Gönderilemedi. İnternet kontrolü yapın.');
+    Alert.alert(
+      success ? '✅ Başarılı!' : '❌ Hata!', 
+      success ? 'Telegram\'a test mesajı gönderildi!' : 'Gönderilemedi.'
+    );
   };
 
   return (
@@ -31,8 +33,7 @@ const styles = StyleSheet.create({
   title: { 
     fontSize: 32, 
     fontWeight: 'bold', 
-    color: '#fff', 
-    marginBottom: 5
+    color: '#fff'
   },
   subtitle: { 
     fontSize: 20, 
