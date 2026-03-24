@@ -6,7 +6,14 @@
     "orientation": "portrait",
     "android": {
       "package": "com.telegram.notificationforwarder",
-      "permissions": ["INTERNET"]
+      "permissions": [
+        "INTERNET"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c7d8ba92-aa7a-4ced-b639-4df9ac21be90"
+      }
     }
   }
 }
